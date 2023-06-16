@@ -1,0 +1,16 @@
+body {
+    font-size: 1.1rem;
+}
+
+label,
+.control-label,
+.help-block,
+.checkbox,
+.radio {
+    font-size: 12px;
+    font-weight: bold
+}
+
+.btn-warning {
+    color: white !important;
+}

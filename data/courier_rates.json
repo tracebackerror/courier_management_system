@@ -1,0 +1,786 @@
+{
+    "Bengaluru->Bengaluru": {
+        "parcel": {
+            "normal_rate_under_100g": 24,
+            "normal_rate_under_500g": 43,
+            "normal_rate_under_1000g": 84,
+            "normal_rate_under_9999g": 106,
+            "fast_rate_under_100g": 32,
+            "fast_rate_under_500g": 53,
+            "fast_rate_under_1000g": 106,
+            "fast_rate_under_9999g": 132
+        },
+        "document": {
+            "normal_rate": 20,
+            "fast_rate": 21
+        }
+    },
+    "Bengaluru->Chennai": {
+        "parcel": {
+            "normal_rate_under_100g": 25,
+            "normal_rate_under_500g": 33,
+            "normal_rate_under_1000g": 80,
+            "normal_rate_under_9999g": 108,
+            "fast_rate_under_100g": 31,
+            "fast_rate_under_500g": 47,
+            "fast_rate_under_1000g": 101,
+            "fast_rate_under_9999g": 137
+        },
+        "document": {
+            "normal_rate": 7,
+            "fast_rate": 15
+        }
+    },
+    "Bengaluru->Delhi": {
+        "parcel": {
+            "normal_rate_under_100g": 26,
+            "normal_rate_under_500g": 48,
+            "normal_rate_under_1000g": 67,
+            "normal_rate_under_9999g": 115,
+            "fast_rate_under_100g": 34,
+            "fast_rate_under_500g": 60,
+            "fast_rate_under_1000g": 90,
+            "fast_rate_under_9999g": 140
+        },
+        "document": {
+            "normal_rate": 25,
+            "fast_rate": 29
+        }
+    },
+    "Bengaluru->Goa": {
+        "parcel": {
+            "normal_rate_under_100g": 29,
+            "normal_rate_under_500g": 54,
+            "normal_rate_under_1000g": 63,
+            "normal_rate_under_9999g": 99,
+            "fast_rate_under_100g": 32,
+            "fast_rate_under_500g": 69,
+            "fast_rate_under_1000g": 87,
+            "fast_rate_under_9999g": 128
+        },
+        "document": {
+            "normal_rate": 19,
+            "fast_rate": 28
+        }
+    },
+    "Bengaluru->Kolkata": {
+        "parcel": {
+            "normal_rate_under_100g": 28,
+            "normal_rate_under_500g": 60,
+            "normal_rate_under_1000g": 73,
+            "normal_rate_under_9999g": 115,
+            "fast_rate_under_100g": 38,
+            "fast_rate_under_500g": 72,
+            "fast_rate_under_1000g": 97,
+            "fast_rate_under_9999g": 145
+        },
+        "document": {
+            "normal_rate": 22,
+            "fast_rate": 31
+        }
+    },
+    "Bengaluru->Pune": {
+        "parcel": {
+            "normal_rate_under_100g": 13,
+            "normal_rate_under_500g": 56,
+            "normal_rate_under_1000g": 63,
+            "normal_rate_under_9999g": 119,
+            "fast_rate_under_100g": 18,
+            "fast_rate_under_500g": 66,
+            "fast_rate_under_1000g": 87,
+            "fast_rate_under_9999g": 147
+        },
+        "document": {
+            "normal_rate": 30,
+            "fast_rate": 37
+        }
+    },
+    "Bengaluru->Mumbai": {
+        "parcel": {
+            "normal_rate_under_100g": 26,
+            "normal_rate_under_500g": 56,
+            "normal_rate_under_1000g": 76,
+            "normal_rate_under_9999g": 108,
+            "fast_rate_under_100g": 33,
+            "fast_rate_under_500g": 71,
+            "fast_rate_under_1000g": 100,
+            "fast_rate_under_9999g": 136
+        },
+        "document": {
+            "normal_rate": 6,
+            "fast_rate": 15
+        }
+    },
+    "Chennai->Bengaluru": {
+        "parcel": {
+            "normal_rate_under_100g": 13,
+            "normal_rate_under_500g": 40,
+            "normal_rate_under_1000g": 83,
+            "normal_rate_under_9999g": 90,
+            "fast_rate_under_100g": 14,
+            "fast_rate_under_500g": 50,
+            "fast_rate_under_1000g": 105,
+            "fast_rate_under_9999g": 118
+        },
+        "document": {
+            "normal_rate": 17,
+            "fast_rate": 25
+        }
+    },
+    "Chennai->Chennai": {
+        "parcel": {
+            "normal_rate_under_100g": 27,
+            "normal_rate_under_500g": 60,
+            "normal_rate_under_1000g": 62,
+            "normal_rate_under_9999g": 94,
+            "fast_rate_under_100g": 37,
+            "fast_rate_under_500g": 75,
+            "fast_rate_under_1000g": 85,
+            "fast_rate_under_9999g": 123
+        },
+        "document": {
+            "normal_rate": 12,
+            "fast_rate": 19
+        }
+    },
+    "Chennai->Delhi": {
+        "parcel": {
+            "normal_rate_under_100g": 15,
+            "normal_rate_under_500g": 52,
+            "normal_rate_under_1000g": 60,
+            "normal_rate_under_9999g": 109,
+            "fast_rate_under_100g": 18,
+            "fast_rate_under_500g": 64,
+            "fast_rate_under_1000g": 83,
+            "fast_rate_under_9999g": 137
+        },
+        "document": {
+            "normal_rate": 29,
+            "fast_rate": 38
+        }
+    },
+    "Chennai->Goa": {
+        "parcel": {
+            "normal_rate_under_100g": 12,
+            "normal_rate_under_500g": 34,
+            "normal_rate_under_1000g": 68,
+            "normal_rate_under_9999g": 118,
+            "fast_rate_under_100g": 16,
+            "fast_rate_under_500g": 49,
+            "fast_rate_under_1000g": 92,
+            "fast_rate_under_9999g": 145
+        },
+        "document": {
+            "normal_rate": 27,
+            "fast_rate": 31
+        }
+    },
+    "Chennai->Kolkata": {
+        "parcel": {
+            "normal_rate_under_100g": 30,
+            "normal_rate_under_500g": 36,
+            "normal_rate_under_1000g": 69,
+            "normal_rate_under_9999g": 108,
+            "fast_rate_under_100g": 33,
+            "fast_rate_under_500g": 50,
+            "fast_rate_under_1000g": 93,
+            "fast_rate_under_9999g": 134
+        },
+        "document": {
+            "normal_rate": 19,
+            "fast_rate": 21
+        }
+    },
+    "Chennai->Pune": {
+        "parcel": {
+            "normal_rate_under_100g": 13,
+            "normal_rate_under_500g": 53,
+            "normal_rate_under_1000g": 79,
+            "normal_rate_under_9999g": 101,
+            "fast_rate_under_100g": 21,
+            "fast_rate_under_500g": 64,
+            "fast_rate_under_1000g": 102,
+            "fast_rate_under_9999g": 126
+        },
+        "document": {
+            "normal_rate": 12,
+            "fast_rate": 18
+        }
+    },
+    "Chennai->Mumbai": {
+        "parcel": {
+            "normal_rate_under_100g": 21,
+            "normal_rate_under_500g": 48,
+            "normal_rate_under_1000g": 75,
+            "normal_rate_under_9999g": 94,
+            "fast_rate_under_100g": 28,
+            "fast_rate_under_500g": 61,
+            "fast_rate_under_1000g": 97,
+            "fast_rate_under_9999g": 122
+        },
+        "document": {
+            "normal_rate": 17,
+            "fast_rate": 25
+        }
+    },
+    "Delhi->Bengaluru": {
+        "parcel": {
+            "normal_rate_under_100g": 23,
+            "normal_rate_under_500g": 53,
+            "normal_rate_under_1000g": 67,
+            "normal_rate_under_9999g": 116,
+            "fast_rate_under_100g": 33,
+            "fast_rate_under_500g": 66,
+            "fast_rate_under_1000g": 90,
+            "fast_rate_under_9999g": 141
+        },
+        "document": {
+            "normal_rate": 9,
+            "fast_rate": 10
+        }
+    },
+    "Delhi->Chennai": {
+        "parcel": {
+            "normal_rate_under_100g": 23,
+            "normal_rate_under_500g": 55,
+            "normal_rate_under_1000g": 74,
+            "normal_rate_under_9999g": 91,
+            "fast_rate_under_100g": 33,
+            "fast_rate_under_500g": 66,
+            "fast_rate_under_1000g": 99,
+            "fast_rate_under_9999g": 117
+        },
+        "document": {
+            "normal_rate": 7,
+            "fast_rate": 17
+        }
+    },
+    "Delhi->Delhi": {
+        "parcel": {
+            "normal_rate_under_100g": 22,
+            "normal_rate_under_500g": 43,
+            "normal_rate_under_1000g": 90,
+            "normal_rate_under_9999g": 115,
+            "fast_rate_under_100g": 30,
+            "fast_rate_under_500g": 54,
+            "fast_rate_under_1000g": 114,
+            "fast_rate_under_9999g": 143
+        },
+        "document": {
+            "normal_rate": 6,
+            "fast_rate": 16
+        }
+    },
+    "Delhi->Goa": {
+        "parcel": {
+            "normal_rate_under_100g": 13,
+            "normal_rate_under_500g": 43,
+            "normal_rate_under_1000g": 75,
+            "normal_rate_under_9999g": 105,
+            "fast_rate_under_100g": 23,
+            "fast_rate_under_500g": 53,
+            "fast_rate_under_1000g": 96,
+            "fast_rate_under_9999g": 133
+        },
+        "document": {
+            "normal_rate": 20,
+            "fast_rate": 21
+        }
+    },
+    "Delhi->Kolkata": {
+        "parcel": {
+            "normal_rate_under_100g": 21,
+            "normal_rate_under_500g": 46,
+            "normal_rate_under_1000g": 69,
+            "normal_rate_under_9999g": 119,
+            "fast_rate_under_100g": 28,
+            "fast_rate_under_500g": 59,
+            "fast_rate_under_1000g": 93,
+            "fast_rate_under_9999g": 146
+        },
+        "document": {
+            "normal_rate": 25,
+            "fast_rate": 30
+        }
+    },
+    "Delhi->Pune": {
+        "parcel": {
+            "normal_rate_under_100g": 19,
+            "normal_rate_under_500g": 54,
+            "normal_rate_under_1000g": 63,
+            "normal_rate_under_9999g": 108,
+            "fast_rate_under_100g": 26,
+            "fast_rate_under_500g": 66,
+            "fast_rate_under_1000g": 86,
+            "fast_rate_under_9999g": 136
+        },
+        "document": {
+            "normal_rate": 18,
+            "fast_rate": 27
+        }
+    },
+    "Delhi->Mumbai": {
+        "parcel": {
+            "normal_rate_under_100g": 14,
+            "normal_rate_under_500g": 57,
+            "normal_rate_under_1000g": 86,
+            "normal_rate_under_9999g": 95,
+            "fast_rate_under_100g": 24,
+            "fast_rate_under_500g": 72,
+            "fast_rate_under_1000g": 108,
+            "fast_rate_under_9999g": 120
+        },
+        "document": {
+            "normal_rate": 21,
+            "fast_rate": 28
+        }
+    },
+    "Goa->Bengaluru": {
+        "parcel": {
+            "normal_rate_under_100g": 24,
+            "normal_rate_under_500g": 37,
+            "normal_rate_under_1000g": 83,
+            "normal_rate_under_9999g": 94,
+            "fast_rate_under_100g": 28,
+            "fast_rate_under_500g": 52,
+            "fast_rate_under_1000g": 104,
+            "fast_rate_under_9999g": 122
+        },
+        "document": {
+            "normal_rate": 17,
+            "fast_rate": 21
+        }
+    },
+    "Goa->Chennai": {
+        "parcel": {
+            "normal_rate_under_100g": 23,
+            "normal_rate_under_500g": 31,
+            "normal_rate_under_1000g": 68,
+            "normal_rate_under_9999g": 106,
+            "fast_rate_under_100g": 28,
+            "fast_rate_under_500g": 43,
+            "fast_rate_under_1000g": 89,
+            "fast_rate_under_9999g": 135
+        },
+        "document": {
+            "normal_rate": 29,
+            "fast_rate": 31
+        }
+    },
+    "Goa->Delhi": {
+        "parcel": {
+            "normal_rate_under_100g": 21,
+            "normal_rate_under_500g": 45,
+            "normal_rate_under_1000g": 79,
+            "normal_rate_under_9999g": 103,
+            "fast_rate_under_100g": 28,
+            "fast_rate_under_500g": 59,
+            "fast_rate_under_1000g": 102,
+            "fast_rate_under_9999g": 132
+        },
+        "document": {
+            "normal_rate": 27,
+            "fast_rate": 33
+        }
+    },
+    "Goa->Goa": {
+        "parcel": {
+            "normal_rate_under_100g": 11,
+            "normal_rate_under_500g": 60,
+            "normal_rate_under_1000g": 61,
+            "normal_rate_under_9999g": 108,
+            "fast_rate_under_100g": 14,
+            "fast_rate_under_500g": 75,
+            "fast_rate_under_1000g": 86,
+            "fast_rate_under_9999g": 133
+        },
+        "document": {
+            "normal_rate": 12,
+            "fast_rate": 14
+        }
+    },
+    "Goa->Kolkata": {
+        "parcel": {
+            "normal_rate_under_100g": 23,
+            "normal_rate_under_500g": 33,
+            "normal_rate_under_1000g": 62,
+            "normal_rate_under_9999g": 116,
+            "fast_rate_under_100g": 31,
+            "fast_rate_under_500g": 46,
+            "fast_rate_under_1000g": 83,
+            "fast_rate_under_9999g": 145
+        },
+        "document": {
+            "normal_rate": 22,
+            "fast_rate": 27
+        }
+    },
+    "Goa->Pune": {
+        "parcel": {
+            "normal_rate_under_100g": 30,
+            "normal_rate_under_500g": 58,
+            "normal_rate_under_1000g": 71,
+            "normal_rate_under_9999g": 99,
+            "fast_rate_under_100g": 31,
+            "fast_rate_under_500g": 71,
+            "fast_rate_under_1000g": 94,
+            "fast_rate_under_9999g": 126
+        },
+        "document": {
+            "normal_rate": 14,
+            "fast_rate": 15
+        }
+    },
+    "Goa->Mumbai": {
+        "parcel": {
+            "normal_rate_under_100g": 13,
+            "normal_rate_under_500g": 57,
+            "normal_rate_under_1000g": 65,
+            "normal_rate_under_9999g": 120,
+            "fast_rate_under_100g": 16,
+            "fast_rate_under_500g": 69,
+            "fast_rate_under_1000g": 88,
+            "fast_rate_under_9999g": 147
+        },
+        "document": {
+            "normal_rate": 5,
+            "fast_rate": 11
+        }
+    },
+    "Kolkata->Bengaluru": {
+        "parcel": {
+            "normal_rate_under_100g": 22,
+            "normal_rate_under_500g": 38,
+            "normal_rate_under_1000g": 76,
+            "normal_rate_under_9999g": 109,
+            "fast_rate_under_100g": 25,
+            "fast_rate_under_500g": 49,
+            "fast_rate_under_1000g": 98,
+            "fast_rate_under_9999g": 135
+        },
+        "document": {
+            "normal_rate": 10,
+            "fast_rate": 19
+        }
+    },
+    "Kolkata->Chennai": {
+        "parcel": {
+            "normal_rate_under_100g": 13,
+            "normal_rate_under_500g": 46,
+            "normal_rate_under_1000g": 90,
+            "normal_rate_under_9999g": 104,
+            "fast_rate_under_100g": 18,
+            "fast_rate_under_500g": 59,
+            "fast_rate_under_1000g": 113,
+            "fast_rate_under_9999g": 129
+        },
+        "document": {
+            "normal_rate": 27,
+            "fast_rate": 37
+        }
+    },
+    "Kolkata->Delhi": {
+        "parcel": {
+            "normal_rate_under_100g": 23,
+            "normal_rate_under_500g": 35,
+            "normal_rate_under_1000g": 84,
+            "normal_rate_under_9999g": 113,
+            "fast_rate_under_100g": 30,
+            "fast_rate_under_500g": 45,
+            "fast_rate_under_1000g": 109,
+            "fast_rate_under_9999g": 139
+        },
+        "document": {
+            "normal_rate": 20,
+            "fast_rate": 29
+        }
+    },
+    "Kolkata->Goa": {
+        "parcel": {
+            "normal_rate_under_100g": 22,
+            "normal_rate_under_500g": 52,
+            "normal_rate_under_1000g": 87,
+            "normal_rate_under_9999g": 113,
+            "fast_rate_under_100g": 26,
+            "fast_rate_under_500g": 65,
+            "fast_rate_under_1000g": 107,
+            "fast_rate_under_9999g": 142
+        },
+        "document": {
+            "normal_rate": 9,
+            "fast_rate": 10
+        }
+    },
+    "Kolkata->Kolkata": {
+        "parcel": {
+            "normal_rate_under_100g": 17,
+            "normal_rate_under_500g": 44,
+            "normal_rate_under_1000g": 61,
+            "normal_rate_under_9999g": 103,
+            "fast_rate_under_100g": 22,
+            "fast_rate_under_500g": 57,
+            "fast_rate_under_1000g": 86,
+            "fast_rate_under_9999g": 133
+        },
+        "document": {
+            "normal_rate": 26,
+            "fast_rate": 29
+        }
+    },
+    "Kolkata->Pune": {
+        "parcel": {
+            "normal_rate_under_100g": 14,
+            "normal_rate_under_500g": 55,
+            "normal_rate_under_1000g": 64,
+            "normal_rate_under_9999g": 101,
+            "fast_rate_under_100g": 21,
+            "fast_rate_under_500g": 70,
+            "fast_rate_under_1000g": 84,
+            "fast_rate_under_9999g": 130
+        },
+        "document": {
+            "normal_rate": 26,
+            "fast_rate": 36
+        }
+    },
+    "Kolkata->Mumbai": {
+        "parcel": {
+            "normal_rate_under_100g": 13,
+            "normal_rate_under_500g": 42,
+            "normal_rate_under_1000g": 82,
+            "normal_rate_under_9999g": 116,
+            "fast_rate_under_100g": 19,
+            "fast_rate_under_500g": 53,
+            "fast_rate_under_1000g": 105,
+            "fast_rate_under_9999g": 144
+        },
+        "document": {
+            "normal_rate": 20,
+            "fast_rate": 27
+        }
+    },
+    "Pune->Bengaluru": {
+        "parcel": {
+            "normal_rate_under_100g": 19,
+            "normal_rate_under_500g": 57,
+            "normal_rate_under_1000g": 78,
+            "normal_rate_under_9999g": 117,
+            "fast_rate_under_100g": 28,
+            "fast_rate_under_500g": 69,
+            "fast_rate_under_1000g": 100,
+            "fast_rate_under_9999g": 147
+        },
+        "document": {
+            "normal_rate": 17,
+            "fast_rate": 20
+        }
+    },
+    "Pune->Chennai": {
+        "parcel": {
+            "normal_rate_under_100g": 26,
+            "normal_rate_under_500g": 42,
+            "normal_rate_under_1000g": 89,
+            "normal_rate_under_9999g": 118,
+            "fast_rate_under_100g": 27,
+            "fast_rate_under_500g": 57,
+            "fast_rate_under_1000g": 111,
+            "fast_rate_under_9999g": 147
+        },
+        "document": {
+            "normal_rate": 18,
+            "fast_rate": 22
+        }
+    },
+    "Pune->Delhi": {
+        "parcel": {
+            "normal_rate_under_100g": 18,
+            "normal_rate_under_500g": 37,
+            "normal_rate_under_1000g": 89,
+            "normal_rate_under_9999g": 92,
+            "fast_rate_under_100g": 27,
+            "fast_rate_under_500g": 51,
+            "fast_rate_under_1000g": 111,
+            "fast_rate_under_9999g": 121
+        },
+        "document": {
+            "normal_rate": 5,
+            "fast_rate": 10
+        }
+    },
+    "Pune->Goa": {
+        "parcel": {
+            "normal_rate_under_100g": 30,
+            "normal_rate_under_500g": 57,
+            "normal_rate_under_1000g": 65,
+            "normal_rate_under_9999g": 118,
+            "fast_rate_under_100g": 33,
+            "fast_rate_under_500g": 67,
+            "fast_rate_under_1000g": 90,
+            "fast_rate_under_9999g": 147
+        },
+        "document": {
+            "normal_rate": 26,
+            "fast_rate": 31
+        }
+    },
+    "Pune->Kolkata": {
+        "parcel": {
+            "normal_rate_under_100g": 17,
+            "normal_rate_under_500g": 33,
+            "normal_rate_under_1000g": 65,
+            "normal_rate_under_9999g": 96,
+            "fast_rate_under_100g": 20,
+            "fast_rate_under_500g": 45,
+            "fast_rate_under_1000g": 87,
+            "fast_rate_under_9999g": 126
+        },
+        "document": {
+            "normal_rate": 17,
+            "fast_rate": 19
+        }
+    },
+    "Pune->Pune": {
+        "parcel": {
+            "normal_rate_under_100g": 20,
+            "normal_rate_under_500g": 30,
+            "normal_rate_under_1000g": 61,
+            "normal_rate_under_9999g": 106,
+            "fast_rate_under_100g": 24,
+            "fast_rate_under_500g": 44,
+            "fast_rate_under_1000g": 85,
+            "fast_rate_under_9999g": 135
+        },
+        "document": {
+            "normal_rate": 5,
+            "fast_rate": 10
+        }
+    },
+    "Pune->Mumbai": {
+        "parcel": {
+            "normal_rate_under_100g": 12,
+            "normal_rate_under_500g": 35,
+            "normal_rate_under_1000g": 85,
+            "normal_rate_under_9999g": 107,
+            "fast_rate_under_100g": 13,
+            "fast_rate_under_500g": 48,
+            "fast_rate_under_1000g": 108,
+            "fast_rate_under_9999g": 133
+        },
+        "document": {
+            "normal_rate": 28,
+            "fast_rate": 31
+        }
+    },
+    "Mumbai->Bengaluru": {
+        "parcel": {
+            "normal_rate_under_100g": 20,
+            "normal_rate_under_500g": 37,
+            "normal_rate_under_1000g": 88,
+            "normal_rate_under_9999g": 98,
+            "fast_rate_under_100g": 25,
+            "fast_rate_under_500g": 48,
+            "fast_rate_under_1000g": 112,
+            "fast_rate_under_9999g": 123
+        },
+        "document": {
+            "normal_rate": 22,
+            "fast_rate": 30
+        }
+    },
+    "Mumbai->Chennai": {
+        "parcel": {
+            "normal_rate_under_100g": 24,
+            "normal_rate_under_500g": 37,
+            "normal_rate_under_1000g": 78,
+            "normal_rate_under_9999g": 99,
+            "fast_rate_under_100g": 30,
+            "fast_rate_under_500g": 51,
+            "fast_rate_under_1000g": 98,
+            "fast_rate_under_9999g": 127
+        },
+        "document": {
+            "normal_rate": 23,
+            "fast_rate": 27
+        }
+    },
+    "Mumbai->Delhi": {
+        "parcel": {
+            "normal_rate_under_100g": 29,
+            "normal_rate_under_500g": 50,
+            "normal_rate_under_1000g": 75,
+            "normal_rate_under_9999g": 113,
+            "fast_rate_under_100g": 39,
+            "fast_rate_under_500g": 63,
+            "fast_rate_under_1000g": 95,
+            "fast_rate_under_9999g": 139
+        },
+        "document": {
+            "normal_rate": 29,
+            "fast_rate": 30
+        }
+    },
+    "Mumbai->Goa": {
+        "parcel": {
+            "normal_rate_under_100g": 16,
+            "normal_rate_under_500g": 30,
+            "normal_rate_under_1000g": 84,
+            "normal_rate_under_9999g": 97,
+            "fast_rate_under_100g": 17,
+            "fast_rate_under_500g": 42,
+            "fast_rate_under_1000g": 109,
+            "fast_rate_under_9999g": 122
+        },
+        "document": {
+            "normal_rate": 6,
+            "fast_rate": 10
+        }
+    },
+    "Mumbai->Kolkata": {
+        "parcel": {
+            "normal_rate_under_100g": 23,
+            "normal_rate_under_500g": 37,
+            "normal_rate_under_1000g": 64,
+            "normal_rate_under_9999g": 91,
+            "fast_rate_under_100g": 25,
+            "fast_rate_under_500g": 50,
+            "fast_rate_under_1000g": 87,
+            "fast_rate_under_9999g": 118
+        },
+        "document": {
+            "normal_rate": 26,
+            "fast_rate": 29
+        }
+    },
+    "Mumbai->Pune": {
+        "parcel": {
+            "normal_rate_under_100g": 18,
+            "normal_rate_under_500g": 53,
+            "normal_rate_under_1000g": 75,
+            "normal_rate_under_9999g": 95,
+            "fast_rate_under_100g": 20,
+            "fast_rate_under_500g": 65,
+            "fast_rate_under_1000g": 99,
+            "fast_rate_under_9999g": 125
+        },
+        "document": {
+            "normal_rate": 8,
+            "fast_rate": 9
+        }
+    },
+    "Mumbai->Mumbai": {
+        "parcel": {
+            "normal_rate_under_100g": 26,
+            "normal_rate_under_500g": 60,
+            "normal_rate_under_1000g": 60,
+            "normal_rate_under_9999g": 108,
+            "fast_rate_under_100g": 33,
+            "fast_rate_under_500g": 70,
+            "fast_rate_under_1000g": 83,
+            "fast_rate_under_9999g": 138
+        },
+        "document": {
+            "normal_rate": 27,
+            "fast_rate": 31
+        }
+    }
+}

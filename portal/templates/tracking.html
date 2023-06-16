@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Tracking{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-5">
+    <br><br><br>
+    <h3 style="text-transform: capitalize;">Track your order</h3>
+    <hr>
+    <form>
+        <div class="row justify-content-center">
+            <div class="col-md-auto my-auto">
+                <label>Enter Booking ID</label>
+            </div>
+            <div class="col-md-auto">
+                <input class="form-control" name="bid" type="number" value="{{request.GET.bid}}" required>
+            </div>
+            <div class="col-md-auto">
+                <button type="submit" class="btn btn-warning">Track</button>
+            </div>
+        </div>
+    </form>
+
+    {% if shipment %}
+    <br>
+    <hr>
+    <br>
+
+    <div class="row justify-content-center">
+        <div class="col-md">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Booking ID</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{shipment.id}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Picking Address</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{shipment.picking_address}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Shipping Address</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{shipment.shipping_address}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card">
+                <div class="card-header">
+                    <h5>Total Fare</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">{{shipment.total_fare}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="d-flex">
+        {% for status in status_list %}
+        {% if forloop.counter <= status_index %}
+            <div class="p-2 flex-fill border border-dark py-4 text-center bg-success text-white">
+                {{status}}
+            </div>
+        {% else %}
+            <div class="p-2 flex-fill border border-dark py-4 text-center bg-light text-dark">
+                {{status}}
+            </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+    {% elif request.GET.bid %}
+    <h4 class="text-danger text-center my-5">Shipment Not Found With This ID</h4>
+    {% endif %}
+
+</div>
+{% endblock body %}

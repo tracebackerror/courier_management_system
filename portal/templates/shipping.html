@@ -1,0 +1,183 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Shipping{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-5">
+    <br><br><br>
+    <h3 style="text-transform: capitalize;">Shipment Details</h3>
+    <hr>
+    <div class="row">
+
+        <div class="col-md-6 ml-4">
+            <form method="post">
+                {% csrf_token %}
+                <input type="hidden" name="action" value="fare">
+                <input type="hidden" name="total_fare" value="{{fare}}">
+
+                <div class="form-row">
+                    <div class="col-md mb-3">
+                        <label>Name</label>
+                        <input type="text" class="form-control" name="name" value="{{name}}" required>
+                    </div>
+                    <div class="col-md mb-3">
+                        <label>Email</label>
+                        <input type="email" class="form-control" value="{{email}}" name="email">
+                    </div>
+                    <div class="col-md mb-3">
+                        <label>Mobile Number</label>
+                        <input type="number" min="1000000000" max="9999999999" class="form-control" name="mobile_no"
+                        value="{{mobile_no}}" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md mb-3">
+                        <label>Picking Address</label>
+                        <input type="text" class="form-control" value="{{picking_address}}" name="picking_address" required>
+                    </div>
+                    <div class="col-md mb-3">
+                        <label>Picking City</label>
+                        <select class="form-control" name="picking_city" required>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md mb-3">
+                        <label>Picking Pincode</label>
+                        <input type="number" min="100000" max="999999" class="form-control" value="{{picking_pincode}}" name="picking_pincode" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md mb-3">
+                        <label>Shipping Address</label>
+                        <input type="text" class="form-control" name="shipping_address" value="{{shipping_address}}" required>
+                    </div>
+                    <div class="col-md mb-3">
+                        <label>Shipping City</label>
+                        <select class="form-control" name="shipping_city" required>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md mb-3">
+                        <label>Shipping Pincode</label>
+                        <input type="number" min="100000" max="999999" class="form-control" value="{{shipping_pincode}}" name="shipping_pincode" required>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-row">
+                    <div class="col-md mb-3">
+                        <label>Picking Date</label>
+                        <input class="form-control" name="picking_date" type="date" value="{{picking_date}}" required>
+                    </div>
+                    <div class="col-md mb-3">
+                        <label>Weight of Goods (grams)</label>
+                        <input type="number" min="1" step="0.01" max="9999" class="form-control" name="goods_weight" value="{{goods_weight}}" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md mb-3">
+                        <label>Type of Courier</label>
+                        <select class="form-control" name="courier_type" required>
+                            <option value="Parcel">Parcel</option>
+                            <option value="Document">Document</option>
+                        </select>
+                    </div>
+                    <div class="col-md mb-3">
+                        <label>Fast Delivery</label>
+                        <select class="form-control" name="fast_delivery" required>
+                            <option value="1">Yes</option>
+                            <option value="0">NO</option>
+                        </select>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-row justify-content-center">
+                    <div class="col-md-auto mb-3">
+                        <button type="reset" class="btn btn-warning">
+                            Reset
+                            <i class="fa fa-refresh" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    <div class="col-md-auto mb-3 ">
+                        <button type="submit" class="btn btn-warning">
+                            Calculate Fare
+                            <i class="fa fa-calculator" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    {% if fare %}
+                    <div class="col-md-auto mb-3 ">
+                        <button type="button" onclick="bookNow()" class="btn btn-warning">
+                            Book Now
+                            <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                    {% endif %}
+                </div>
+
+
+            </form>
+        </div>
+
+        <div class="col-md-4 offset-md-1">
+            {% if fare %}
+            <div class="col-md">
+                <div class="card">
+                    <div class="card-header text-center">
+                        <h5>Total Fare</h5>
+                    </div>
+                    <div class="card-body text-center">
+                        <p class="card-text display-4 font-weight-bold">
+                            <i class="fa fa-inr" aria-hidden="true"></i>
+                            {{fare}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            <br>
+            <img class="img-fluid" src="/static/img/bg.jpg">
+        </div>
+
+    </div>
+</div>
+<br>
+{% endblock body %}
+
+
+{% block script %}
+<script>
+    function bookNow(){
+        $("input[name='action']").val("book");
+        $("form").submit();
+    }
+
+
+    $(document).ready(function(){
+        $("select[name='picking_city'] option[value='{{picking_city}}']").prop("selected", true);
+        $("select[name='shipping_city'] option[value='{{shipping_city}}']").prop("selected", true);
+        $("select[name='courier_type'] option[value='{{courier_type}}']").prop("selected", true);
+        $("select[name='fast_delivery'] option[value='{{fast_delivery}}']").prop("selected", true);
+    });
+</script>
+{% endblock script %}

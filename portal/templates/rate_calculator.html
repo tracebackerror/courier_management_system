@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Rate Calculator{% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-5">
+    <br><br><br>
+    <h3 style="text-transform: capitalize;">Rate Calculator</h3>
+    <p style="text-transform: capitalize;">Get the Approximate Rate for you courier (actual may varries)</p>
+    <hr>
+
+    <div class="row justify-content-center">
+        <div class="col-md my-auto">
+            <form method="post">
+                {% csrf_token %}
+                
+                <div class="form-row">
+                    <div class="col-md mb-3">
+                        <label>From City</label>
+                        <select class="form-control" id="from_city" name="from_city" required>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                    <div class="col-md mb-3">
+                        <label>To City</label>
+                        <select class="form-control" id="to_city" name="to_city" required>
+                            <option value="Bengaluru">Bengaluru</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md mb-3">
+                        <label>Courier Type</label>
+                        <select class="form-control" id="type" name="type">
+                            <option value="Parcel">Parcel</option>
+                            <option value="Document">Document</option>   
+                          </select>
+                    </div>
+                    <div class="col-md mb-3">
+                        <label>Weight</label>
+                        <select class="form-control" id="weight" name="weight">
+                            <option value="100">Under 100 gram</option>   
+                            <option value="500">Under 500 gram</option>   
+                            <option value="1000">Under 1KG</option>   
+                            <option value="9999">More than 1KG</option>   
+                          </select>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="form-row justify-content-center">
+                    <div class="col-md-auto mb-3">
+                        <button type="reset" class="btn btn-warning">Reset</button>
+                    </div>
+                    <div class="col-md-auto mb-3">
+                        <button type="submit" class="btn btn-warning">Get Fare</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="col-md my-auto">
+            <h4 style="text-transform: capitalize;">General rates</h4>
+            <img src="/static/img/general_rates.png" class="img-fluid">
+        </div>
+    </div>
+
+
+    {% if request.method == "POST" %}
+    <br>
+    <hr>
+    <br>
+
+    <div class="row justify-content-center">
+        <div class="col-md">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h5>Expected Normal Delivery Rate</h5>
+                </div>
+                <div class="card-body text-center">
+                    <p class="card-text display-4 font-weight-bold">
+                        <i class="fa fa-inr" aria-hidden="true"></i>
+                        {{normal_rate}}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h5>Expected Fast Delivery Rate</h5>
+                </div>
+                <div class="card-body text-center">
+                    <p class="card-text display-4 font-weight-bold">
+                        <i class="fa fa-inr" aria-hidden="true"></i>
+                        {{fast_rate}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <br><br><br>
+
+</div>
+{% endblock body %}
+
+
+{% block script %}
+<script>
+    $(document).ready(function(){
+        $("#from_city option[value='{{from_city}}']").prop("selected", true);
+        $("#to_city option[value='{{to_city}}']").prop("selected", true);
+        $("#type option[value='{{type}}']").prop("selected", true);
+        $("#weight option[value='{{weight}}']").prop("selected", true);
+    });
+</script>
+{% endblock script %}

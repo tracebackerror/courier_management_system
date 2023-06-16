@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Registration{% endblock title %}
+
+{% block body %}
+<div style="background-repeat: no-repeat;background-size: cover;background-image: url('/static/img/bg.png');background-position: right center;">
+    <div class="container" style="height: 100vh;">
+        <br><br><br>
+        <div class="col-md-6 py-4"
+            style="padding: 30px;border: 1px ridge white;border-radius: 20px;background-color: #fdf5c7;">
+            <form method="post">
+                {% csrf_token %}
+
+                {% if form.errors %}
+                {% for field in form %}
+                {% for error in field.errors %}
+                <div class="alert alert-danger">
+                    <strong>{{ error|escape }}</strong>
+                </div>
+                {% endfor %}
+                {% endfor %}
+                {% for error in form.non_field_errors %}
+                <div class="alert alert-danger">
+                    <strong>{{ error|escape }}</strong>
+                </div>
+                {% endfor %}
+                {% endif %}
+
+                <div class="text-center">
+                    <span style="font-weight: bold;color: black;text-transform: uppercase;">Registration</span>
+                    <br><br>
+                </div>
+
+                {% for field in form %}
+                {{field}}
+                {% endfor %}
+                <button style="width: 150px;display: block;margin-left: auto;margin-right: auto;" type="submit"
+                class="btn btn-warning">Register</button>
+            </form>
+            <br>
+            <div class="text-center">
+                <a class="mt-2" href="/login/" style="text-decoration: underline;">Already have account? Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}

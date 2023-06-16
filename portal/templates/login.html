@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Login{% endblock title %}
+
+{% block body %}
+<div style="background-repeat: no-repeat;background-size: cover;background-image: url('/static/img/bg.png');background-position: right center;">
+    <div class="container" style="height: 100vh;">
+        <br><br><br><br><br><br>
+        <div class="col-md-5 py-5"
+            style="padding: 30px;border: 1px ridge white;border-radius: 20px;background-color: #fdf5c7;">
+            <form method="post">
+                {% csrf_token %}
+
+                {% if form.errors %}
+                <div class="alert alert-danger">
+                    <strong>✘ Invaild Username and Password</strong>
+                </div>
+                {% endif %}
+
+                <div class="text-center">
+                    <span style="font-weight: bold;color: black;">LOGIN</span>
+                    <br><br>
+                </div>
+
+                {{ form.username }}
+                <br>
+                {{ form.password }}
+                <br>
+                <button style="width: 150px;display: block;margin-left: auto;margin-right: auto;" type="submit"
+                    class="btn btn-warning">Login</button>
+            </form>
+            <br>
+            <div class="text-center">
+                <a href="/register/" style="text-decoration: underline;">New to courier service? Register Now</a>
+                <br>
+                <a class="mt-2" href="/admin/" style="text-decoration: underline;">Admin Login</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock body %}
